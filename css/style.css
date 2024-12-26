@@ -1,0 +1,11 @@
+#header {
+    transition: background-color 0.5s ease; /* Transición suave para el cambio de fondo */
+}
+  
+#header.transparent {
+    background-color: transparent; /* Sin fondo cuando está en la parte superior */
+}
+  
+#header.scrolled {
+    background-color: green; /* Fondo verde al hacer scroll */
+}
