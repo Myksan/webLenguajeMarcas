@@ -1,8 +1,3 @@
-#header {
-    height: 90px; /* Altura fija del header */
-}
-  
-/* Para evitar que el contenido quede oculto debajo del header */
-body {
-    padding-top: 80px; /* Compensa el header fijo */
-}  
+/**
+De momento vacio, ya dividiremos entre style y structure.
+*/
