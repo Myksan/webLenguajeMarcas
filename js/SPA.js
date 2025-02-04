@@ -22,7 +22,7 @@ async function loadContent(page) {
   
   // Manejar el evento de cambio de hash
   function handleHashChange() {
-    const hash = window.location.hash.replace('#', '') || 'inicio'; // Si no hay hash, carga 'home'
+    const hash = window.location.hash.replace('#', '') || 'inicio'; // Si no hay hash, carga 'inicio'
     loadContent(hash);
   }
 
