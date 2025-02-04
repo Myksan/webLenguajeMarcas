@@ -1,1 +1,144 @@
+body.bodyM {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
+.fullscreenSectionM {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('/img/espacio.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.fullscreenSectionM::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.fullscreenContentM {
+  position: relative;
+  z-index: 2;
+}
+
+.fullscreenTitleM {
+  font-size: 3.5rem;
+}
+
+.fullscreenSubtitleM {
+  font-size: 1.7rem;
+}
+
+#sobreNosotrosM,
+#nuestrosValoresM,
+#formularioM {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+#sobreNosotrosM {
+  background-color: #6c757d;
+  padding: 40px 0;
+}
+
+#nuestrosValoresM {
+  background-color: #343a40;
+  padding: 40px 0;
+}
+
+#sobreNosotrosM h1, #nuestrosValoresM h1 {
+  font-size: 2.8rem;
+}
+
+#sobreNosotrosM p, #nuestrosValoresM p {
+  font-size: 1.5rem;
+}
+
+#formularioM {
+  background-color: #495057;
+  padding: 20px;
+}
+
+.hoverImageM-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hoverImageM {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+.hoverImageM-container:hover .hoverImageM
+{
+  transform: scale(1.1);
+}
+
+.hoverImageM:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  filter: brightness(0.5);
+}
+
+.hoverImageM-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  text-align: center;
+}
+
+.hoverImageM-container:hover .hoverImageM-text {
+  opacity: 1;
+}
+
+.formContainerM {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  width: 45%;
+  max-width: 450px;
+  color: black;
+}
+
+.formContainerM form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .fullscreenTitleM {
+      font-size: 2.5rem;
+  }
+  .fullscreenSubtitleM {
+      font-size: 1.2rem;
+  }
+  .formContainerM {
+      width: 80%;
+  }
+}
