@@ -1,7 +1,6 @@
 /* Para evitar que el contenido quede oculto debajo del header */
 body {
     padding-top: 80px; /* Compensa el header fijo */
-    background-color: blue;
 } 
 
 #header {

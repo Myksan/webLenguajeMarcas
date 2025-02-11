@@ -1,4 +1,16 @@
-#preformulario_M{
-    font-size: 1.5rem;
+.preformulario_M{
     margin-bottom: 5%;
+    margin-top: 80px;
+    font-size: 1.5rem;
 }
+
+.preformulario_M h1{
+    font-size: 3.5rem;
+}
+
+.nuestrosIdeales{
+    margin-bottom: 5%;
+    margin-top: 80px;
+    font-size: 1.5rem;
+}
+
