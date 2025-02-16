@@ -1,0 +1,222 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.8;
+    padding-top: 20px;
+}
+
+/* Contenedor Principal */
+.news-container {
+    max-width: 900px;
+    width: 90%;
+    background: white;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen Destacada */
+.news-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Encabezado */
+.news-title {
+    font-size: 2.5em;
+    color: #222;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.news-meta {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.news-categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Botones de categorías */
+.category {
+    background: #007BFF;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+
+/* Secciones */
+.news-content h2 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #007BFF;
+}
+
+.news-paragraph {
+    margin-bottom: 15px;
+}
+
+/* Botón Leer Más */
+.read-more {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.read-more:hover {
+    background: #0056b3;
+}
+
+/* Redes Sociales */
+.social-share {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    background: #007BFF;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.social-icon:hover {
+    background: #0056b3;
+}
+
+
+/* Botón de Volver */
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background: #0056b3;
+}
+/* Sección de Artículo Relacionado */
+.related-article {
+    margin-top: 40px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.related-article h2 {
+    color: #007BFF;
+}
+
+.related-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.related-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.related-link img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.related-content h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #007BFF;
+}
+
+.related-content p {
+    font-size: 14px;
+    color: #555;
+}
+/* Imagen dentro del texto mejorada */
+.news-inline-image {
+    float: right; /* Mantiene la alineación a la derecha */
+    width: 35%; /* Reduce un poco el tamaño de la imagen */
+    margin: 10px 0 15px 20px; /* Ajusta el margen para mejorar la distribución */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    overflow: hidden;
+    text-align: center;
+}
+
+.news-inline-image img {
+    width: 100%; /* Mantiene la imagen dentro del contenedor */
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Leyenda de la imagen */
+.news-inline-image figcaption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Mejoras en móviles */
+@media (max-width: 768px) {
+    .news-inline-image {
+        float: none; /* Elimina el flotado en móviles */
+        width: 100%; /* Ocupa todo el ancho */
+        text-align: center;
+        margin: 15px auto;
+    }
+}
+
