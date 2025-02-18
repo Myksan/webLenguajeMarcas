@@ -1,46 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("JavaScript cargado correctamente");
 
-    // Asegurar que el scroll esté activado
-    document.body.style.overflow = "auto";
-    
-    // Botón Volver Atrás
-    const backButton = document.getElementById("back-button");
-    if (backButton) {
-        backButton.addEventListener("click", function () {
-            window.history.back();
-        });
-    }
-
-    // Función de desplazamiento suave al hacer clic en los botones de sección
+    // Función para el desplazamiento suave y resaltado
     const scrollButtons = document.querySelectorAll(".scroll-button");
 
     scrollButtons.forEach(button => {
         button.addEventListener("click", function () {
-            const targetId = this.getAttribute("data-target");
-            const targetElement = document.querySelector(targetId);
+            let targetId = this.getAttribute("data-target");
+            let targetElement = document.querySelector("#" + targetId);
 
             if (targetElement) {
+                console.log("Desplazándose a:", targetId);
                 targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+
+                // Efecto de resaltado temporal
+                targetElement.style.transition = "background-color 0.5s ease-in-out";
+                targetElement.style.backgroundColor = "#ffffcc"; // Amarillo claro para destacar
+
+                setTimeout(() => {
+                    targetElement.style.backgroundColor = ""; // Restaurar el color original
+                }, 1000);
+            } else {
+                console.warn("Elemento no encontrado:", targetId);
             }
         });
-    });
-});
-document.querySelectorAll(".scroll-button").forEach(button => {
-    button.addEventListener("click", function () {
-        const targetId = this.getAttribute("data-target");
-        const targetElement = document.querySelector(targetId);
-
-        if (targetElement) {
-            targetElement.scrollIntoView({ behavior: "smooth", block: "center" });
-
-            // Agregar un efecto de resaltado temporal
-            targetElement.style.transition = "box-shadow 0.2s ease-in-out";
-            targetElement.style.boxShadow = "0 0 15px rgba(0, 123, 255, 0.6)";
-
-            setTimeout(() => {
-                targetElement.style.boxShadow = "none";
-            }, 700);
-        }
     });
 });
