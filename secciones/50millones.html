@@ -1,78 +1,64 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lee la última noticia sobre el tema de tu interés. Mantente informado con artículos relevantes y bien escritos.">
-    <meta name="author" content="Tu Nombre">
-    <meta property="og:title" content="Noticia - Ejemplo de Título">
-    <meta property="og:description" content="Mantente al día con las últimas noticias.">
-    <meta property="og:image" content="/img/share-image.jpg">
-    <meta property="og:url" content="https://tupagina.com/noticia">
-    <title>Noticia - Crisis</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-</head>
-<body>
-    <button id="back-button" class="back-button">← Volver</button>
-    <main class="news-container">
-        <article class="news-item">
-            <header class="news-header">
-                <h1 class="news-title">Político Olvida Declarar 50 Millones</h1>
-                <div class="news-meta">
-                    <p class="news-date">Fecha de publicación: 18 Feb 2025</p>
-                    <div class="news-categories">
-                        <button class="category scroll-button" data-target="#intro-politico">Introducción</button>
-                        <button class="category scroll-button" data-target="#detalles-politico">Detalles</button>
-                    </div>
-                </div>
-            </header>
-        
-            <section class="news-content">
-                <h2 id="intro-politico">Introducción</h2>
-                <p class="news-paragraph">
-                    Un senador ha sido descubierto con una cuenta en Suiza con más de 50 millones de euros no declarados. 
-                    La noticia ha causado un escándalo político, ya que el implicado había promovido leyes contra la evasión fiscal.
-                </p>
-        
-                <figure class="news-inline-image">
-                    <img src="img/Politico50millones.webp" alt="Político con maletín de dinero en su oficina">
-                </figure>
-        
-                <h2 id="detalles-politico">Detalles</h2>
-                <p class="news-paragraph">
-                    La investigación reveló que el senador mantuvo el dinero en cuentas bancarias en el extranjero durante años, 
-                    sin reportarlo a las autoridades fiscales. Las primeras declaraciones del político alegan que "fue un descuido", 
-                    pero los documentos filtrados indican que existió una estructura financiera creada para ocultar los fondos.
-                </p>
-        
-                <h2>Consecuencias y Reacciones</h2>
-                <p class="news-paragraph">
-                    La oposición ha exigido su dimisión inmediata, mientras que el gobierno se ha distanciado del escándalo. 
-                    El caso ha reavivado el debate sobre la corrupción en la política y la necesidad de reforzar los mecanismos de transparencia. 
-                    Protestas han estallado en varias ciudades, con ciudadanos exigiendo justicia y la recuperación del dinero.
-                </p>
-            </section>
-        
-            <footer class="news-footer">
-                <div class="social-share">
-                    <a href="https://sede.agenciatributaria.gob.es/Sede/buscador-oficinas/barcelona.html" target="_blank" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.policia.es/_es/dependencias_localizador_accesible_provincias.php" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://movimientosumar.es/" target="_blank" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </footer>
-        </article>
-        
-        <aside class="related-article">
-            <h2>Artículo Relacionado</h2>
-            <a href="#recordcorrupcion" class="related-link">
-                <img src="img/corrupto.webp" alt="Nuevo Récord de Corrupción">
-                <div class="related-content">
-                    <h3>Nuevo Récord de Corrupción</h3>
-                    <p>El gobierno ha anunciado un avance en la eficiencia del desfalco...</p>
-                </div>
-            </a>
-        </aside>
-    </main>
-    <script src="/js/Luis/noticiacadauna.js" defer></script>
-</body>
-</html>
+<button id="back-button" class="back-buttonL">← Volver</button>
+
+<div class="news-containerL"> <!-- Sustitución de <main> -->
+    <article class="news-itemL">
+        <h1 class="news-titleL">Político Olvida Declarar 50 Millones</h1>
+        <section class="news-contentL">
+            <div class="news-categoriesL">
+                <button class="category scroll-buttonL" data-target="intro">Introducción</button>
+                <button class="category scroll-buttonL" data-target="content">Desarrollo</button>
+                <button class="category scroll-buttonL" data-target="conclusion">Conclusión</button>
+            </div>
+            <h2 id="intro">Introducción</h2>
+            
+            
+
+            <p class="news-paragraphL">
+                En un escándalo sin precedentes, un senador ha sido descubierto con una cuenta en Suiza 
+                con más de 50 millones de euros no declarados. Este hallazgo ha causado revuelo en el 
+                ámbito político y social, ya que el implicado había promovido leyes contra la evasión fiscal. 
+                La sociedad y los medios han reaccionado con indignación ante la hipocresía del político.
+            </p>
+            <figure class="news-inline-imageL">
+                <img src="img/Politico50millones.webp" alt="Político con maletín de dinero en su oficina">
+            </figure>
+            <h2 id="content">Detalles del Caso</h2>
+            <p class="news-paragraphL">
+                La investigación reveló que el senador mantuvo el dinero en cuentas bancarias en el extranjero 
+                durante más de una década sin reportarlo a las autoridades fiscales. Según documentos filtrados, 
+                el dinero provendría de donaciones de empresas privadas y supuestos contratos de asesoramiento 
+                cuyos detalles aún no han sido esclarecidos. 
+                <br><br>
+                Las primeras declaraciones del político alegan que "fue un descuido administrativo" 
+                y que está dispuesto a regularizar su situación. Sin embargo, analistas financieros 
+                han detectado una estructura financiera sofisticada creada exclusivamente para ocultar 
+                los fondos y evadir impuestos. 
+            </p>
+            <h2>Consecuencias y Reacciones</h2>
+            <p class="news-paragraphL">
+                La oposición ha exigido su dimisión inmediata y una investigación más profunda sobre el origen del dinero. 
+                Mientras tanto, el gobierno se ha distanciado del escándalo y ha prometido tomar medidas para evitar 
+                que se repitan estos actos de corrupción. 
+                <br><br>
+                En diversas ciudades han estallado protestas ciudadanas exigiendo justicia y transparencia. 
+                El caso también ha motivado a la creación de una nueva ley de supervisión de patrimonios 
+                de los funcionarios públicos, con el objetivo de prevenir la evasión fiscal y el enriquecimiento ilícito.
+                <br><br>
+                Se espera que en las próximas semanas el parlamento debata si el senador puede ser juzgado 
+                por corrupción y blanqueo de dinero. El país sigue expectante ante las decisiones judiciales 
+                y políticas que puedan surgir en este polémico caso.
+            </p>
+        </section>
+    </article>
+    <aside class="related-articleL">
+        <h2>Artículo Relacionado</h2>
+        <a href="#recordcorrupcion" class="related-linkL">
+            <img src="img/corrupto.webp" alt="Nuevo Récord de Corrupción">
+            <div class="related-contentL">
+                <h3>Nuevo Récord de Corrupción</h3>
+                <p>El gobierno ha anunciado un avance en la eficiencia del desfalco...</p>
+            </div>
+        </a>
+    </aside>
+</div> <!-- Cierre del nuevo contenedor -->
+<script src="/webLenguajeMarcas/js/Luis/noticiacadauna.js" defer></script>
