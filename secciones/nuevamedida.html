@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lee la última noticia sobre el tema de tu interés. Mantente informado con artículos relevantes y bien escritos.">
+    <meta name="author" content="Tu Nombre">
+    <meta property="og:title" content="Noticia - Ejemplo de Título">
+    <meta property="og:description" content="Mantente al día con las últimas noticias.">
+    <meta property="og:image" content="/img/share-image.jpg">
+    <meta property="og:url" content="https://tupagina.com/noticia">
+    <title>Noticia - Crisis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <button id="back-button" class="back-button">← Volver</button>
+    <main class="news-container">
+        <article class="news-item">
+            <header class="news-header">
+                <h1 class="news-title">Nueva Medida Económica: ¿Solución o Crisis?</h1>
+                <div class="news-meta">
+                    <p class="news-date">Fecha de publicación: 18 Feb 2025</p>
+                    <div class="news-categories">
+                        <button class="category scroll-button" data-target="#intro-medida">Introducción</button>
+                        <button class="category scroll-button" data-target="#detalles-medida">Detalles</button>
+                    </div>
+                </div>
+            </header>
+        
+            <section class="news-content">
+                <h2 id="intro-medida">Introducción</h2>
+                <p class="news-paragraph">
+                    Ante el aumento del desempleo y la crisis económica, el gobierno ha implementado una nueva medida para 
+                    regular el acceso a los bancos y los servicios financieros. Se han impuesto restricciones a los retiros 
+                    de efectivo y un nuevo sistema de asistencia económica que promete ayudar a los sectores más vulnerables.
+                </p>
+        
+                <figure class="news-inline-image">
+                    <img src="img/nuevamedida.webp" alt="Personas haciendo largas filas en bancos">
+                </figure>
+        
+                <h2 id="detalles-medida">Detalles</h2>
+                <p class="news-paragraph">
+                    La medida busca reducir la presión sobre el sistema financiero y evitar un colapso bancario. Se ha establecido 
+                    un límite semanal de retiro de efectivo para los ciudadanos y un sistema de turnos para acceder a los bancos. 
+                    Mientras tanto, se están evaluando ayudas económicas directas para los desempleados.
+                </p>
+        
+                <h2>Reacciones y Opiniones</h2>
+                <p class="news-paragraph">
+                    La población ha reaccionado con incertidumbre. Algunos analistas aseguran que esta estrategia podría estabilizar 
+                    la economía a largo plazo, pero muchos ciudadanos expresan su frustración ante las largas colas y la falta de 
+                    acceso inmediato a sus ahorros. 
+                    <br><br>
+                    El debate continúa en los medios y redes sociales, mientras expertos advierten sobre las posibles repercusiones 
+                    de esta nueva política.
+                </p>
+            </section>
+        
+            <footer class="news-footer">
+                <div class="social-share">
+                    <a href="https://sede.agenciatributaria.gob.es/Sede/buscador-oficinas/barcelona.html" target="_blank" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.policia.es/_es/dependencias_localizador_accesible_provincias.php" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://movimientosumar.es/" target="_blank" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </footer>
+        </article>
+        
+        <aside class="related-article">
+            <h2>Artículo Relacionado</h2>
+            <a href="#recordcorrupcion" class="related-link">
+                <img src="img/corrupto.webp" alt="Nuevo Récord de Corrupción">
+                <div class="related-content">
+                    <h3>Nuevo Récord de Corrupción</h3>
+                    <p>El gobierno ha anunciado un avance en la eficiencia del desfalco...</p>
+                </div>
+            </a>
+        </aside>
+    </main>
+    <script src="/js/Luis/noticiacadauna.js" defer></script>
+</body>
+</html>

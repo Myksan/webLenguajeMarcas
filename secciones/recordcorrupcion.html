@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lee la última noticia sobre el tema de tu interés. Mantente informado con artículos relevantes y bien escritos.">
+    <meta name="author" content="Tu Nombre">
+    <meta property="og:title" content="Noticia - Ejemplo de Título">
+    <meta property="og:description" content="Mantente al día con las últimas noticias.">
+    <meta property="og:image" content="/img/share-image.jpg">
+    <meta property="og:url" content="https://tupagina.com/noticia">
+    <title>Noticia - Crisis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <button id="back-button" class="back-button">← Volver</button>
+    <main class="news-container">
+        <article class="news-item">
+            <header class="news-header">
+                <h1 class="news-title">Nuevo Récord de Corrupción: Un Caso Sin Precedentes</h1>
+                <div class="news-meta">
+                    <p class="news-date">Fecha de publicación: <time datetime="2025-02-18">18 Feb 2025</time></p>
+                    <div class="news-categories">
+                        <button class="category scroll-button" data-target="#intro-corrupcion">Introducción</button>
+                        <button class="category scroll-button" data-target="#desarrollo-corrupcion">Detalles</button>
+                    </div>
+                </div>
+            </header>
+            <section class="news-content">
+                <h2 id="intro-corrupcion">Introducción</h2>
+                <p class="news-paragraph">
+                    Un nuevo escándalo de corrupción ha sacudido el país. Documentos filtrados han revelado 
+                    un esquema de malversación de fondos públicos sin precedentes, en el que altos funcionarios 
+                    del gobierno estarían involucrados en el desvío de millones de dólares.
+                </p>
+                <figure class="news-inline-image">
+                    <img src="img/corrupto.webp" alt="Nuevo Récord de Corrupción">
+                    <figcaption>Escena de la transacción que ha generado el escándalo.</figcaption>
+                </figure>
+        
+                <h2 id="desarrollo-corrupcion">Detalles del Caso</h2>
+                <p class="news-paragraph">
+                    Según informes de fuentes internas, el dinero fue transferido a cuentas bancarias en paraísos 
+                    fiscales mediante un entramado de empresas ficticias. Estas operaciones fueron realizadas con la 
+                    colaboración de varias entidades privadas y asesores financieros de alto nivel.
+                </p>
+                
+                <h2>Reacciones y Consecuencias</h2>
+                <p class="news-paragraph">
+                    La comunidad internacional ha condenado el escándalo, y múltiples organismos han exigido 
+                    una investigación exhaustiva. Protestas ciudadanas han comenzado a organizarse en las 
+                    principales ciudades del país, exigiendo justicia y transparencia.
+                </p>
+        
+                <h2>Conclusión</h2>
+                <p class="news-paragraph">
+                    Este nuevo caso de corrupción pone de manifiesto la necesidad urgente de reformas en los 
+                    sistemas de control y transparencia gubernamental. La presión pública y la intervención de 
+                    organismos internacionales podrían ser clave en la resolución de este escándalo.
+                </p>
+            </section>
+            <footer class="news-footer">
+                <div class="social-share">
+                    <a href="https://sede.agenciatributaria.gob.es/Sede/buscador-oficinas/barcelona.html" target="_blank" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.policia.es/_es/dependencias_localizador_accesible_provincias.php" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://movimientosumar.es/" target="_blank" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </footer>
+        </article>
+        <aside class="related-article">
+            <h2>Artículo Relacionado</h2>
+            <a href="#Opurtunidades" class="related-link">
+                <img src="img/ExperienciaValiosa.webp" alt="Trabajo Digno: Ahora con 'Oportunidades'">
+                <div class="related-content">
+                    <h3>Trabajo Digno: Ahora con "Oportunidades"</h3>
+                    <p>La reforma laboral elimina los sueldos, reemplazándolos por "experiencia valiosa"...</p>
+                </div>
+            </a>
+        </aside>   
+    </main>
+    <script src="js/Luis/noticiacadauna.js" defer></script>
+</body>
+</html>
