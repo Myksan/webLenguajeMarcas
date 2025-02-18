@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("JavaScript cargado correctamente");
 
+    // Asegurar que el scroll esté activado
+    document.body.style.overflow = "auto";
+    
     // Botón Volver Atrás
     const backButton = document.getElementById("back-button");
     if (backButton) {
@@ -34,7 +37,7 @@ document.querySelectorAll(".scroll-button").forEach(button => {
             // Agregar un efecto de resaltado temporal
             targetElement.style.transition = "box-shadow 0.2s ease-in-out";
             targetElement.style.boxShadow = "0 0 15px rgba(0, 123, 255, 0.6)";
-            
+
             setTimeout(() => {
                 targetElement.style.boxShadow = "none";
             }, 700);
