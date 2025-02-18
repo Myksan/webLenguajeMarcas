@@ -1,80 +1,54 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lee la última noticia sobre el tema de tu interés. Mantente informado con artículos relevantes y bien escritos.">
-    <meta name="author" content="Tu Nombre">
-    <meta property="og:title" content="Noticia - Ejemplo de Título">
-    <meta property="og:description" content="Mantente al día con las últimas noticias.">
-    <meta property="og:image" content="/img/share-image.jpg">
-    <meta property="og:url" content="https://tupagina.com/noticia">
-    <title>Noticia - Crisis</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-</head>
-<body>
-    <button id="back-button" class="back-button">← Volver</button>
-    <main class="news-container">
-        <article class="news-item">
-            <header class="news-header">
-                <h1 class="news-title">Trabajo Digno: Ahora con "Oportunidades"</h1>
-                <div class="news-meta">
-                    <p class="news-date">Fecha de publicación: 18 Feb 2025</p>
-                    <div class="news-categories">
-                        <button class="category scroll-button" data-target="#intro-trabajo">Introducción</button>
-                        <button class="category scroll-button" data-target="#detalles-trabajo">Detalles</button>
-                    </div>
-                </div>
-            </header>
-        
-            <section class="news-content">
-                <h2 id="intro-trabajo">Introducción</h2>
-                <p class="news-paragraph">
-                    Una reciente reforma laboral ha cambiado por completo el panorama del empleo. 
-                    La nueva normativa elimina los salarios convencionales y los reemplaza por lo que el gobierno denomina "experiencia valiosa". 
-                    Según los responsables de la reforma, este sistema ayudará a generar más empleos y permitirá a los trabajadores "acumular conocimientos".
-                </p>
-        
-                <figure class="news-inline-image">
-                    <img src="img/ExperienciaValiosa.webp" alt="Oficina con empleados trabajando sin salario">
-                </figure>
-        
-                <h2 id="detalles-trabajo">Detalles</h2>
-                <p class="news-paragraph">
-                    Bajo este nuevo esquema, las empresas no están obligadas a pagar un salario, sino que ofrecen "oportunidades" a los empleados para crecer 
-                    en su campo profesional. El gobierno asegura que esto reducirá el desempleo y aumentará la productividad. Sin embargo, sindicatos y trabajadores 
-                    han reaccionado con indignación, denunciando que se trata de una excusa para precarizar aún más el mercado laboral.
-                </p>
-        
-                <h2>Reacciones y Consecuencias</h2>
-                <p class="news-paragraph">
-                    Los primeros afectados han expresado su preocupación. "Nos dicen que estamos ganando experiencia, pero la realidad es que no podemos pagar nuestras facturas", 
-                    comentó un trabajador en una protesta. Mientras tanto, empresas han elogiado la medida, argumentando que "incentiva la formación profesional". 
-                    Manifestaciones se han registrado en varias ciudades exigiendo la derogación inmediata de la reforma.
-                </p>
-            </section>
-        
-            <footer class="news-footer">
-                <<div class="social-share">
-                    <a href="https://sede.agenciatributaria.gob.es/Sede/buscador-oficinas/barcelona.html" target="_blank" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.policia.es/_es/dependencias_localizador_accesible_provincias.php" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://movimientosumar.es/" target="_blank" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </footer>
-        </article>
-        
-        <aside class="related-article">
-            <h2>Artículo Relacionado</h2>
-            <a href="#recordcorrupcion" class="related-link">
-                <img src="img/corrupto.webp" alt="Nuevo Récord de Corrupción">
-                <div class="related-content">
-                    <h3>Nuevo Récord de Corrupción</h3>
-                    <p>El gobierno ha anunciado un avance en la eficiencia del desfalco...</p>
-                </div>
-            </a>
-        </aside>
-        
-    </main>
-    <script src="/js/Luis/noticiacadauna.js" defer></script>
-</body>
-</html>
+<button id="back-button" class="back-button">← Volver</button>
+
+<div class="news-containerL"> <!-- Sustitución de <main> -->
+<article class="news-itemL">
+    <h1 class="news-titleL"> Trabajo Digno: Ahora con "Oportunidades"</h1>
+
+        <section class="news-contentL">
+            <div class="news-categoriesL">
+                <button class="category scroll-buttonL" data-target="intro">Introducción</button>
+                <button class="category scroll-buttonL" data-target="content">Desarrollo</button>
+                <button class="category scroll-buttonL" data-target="conclusion">Conclusión</button>
+            </div>
+            <h2 id="intro">Introducción</h2>
+            <p class="news-paragraphL">
+                La reciente reforma laboral ha generado una gran controversia entre trabajadores y empresarios. 
+                La nueva normativa establece que, en algunos sectores, los sueldos pueden ser sustituidos por "experiencia valiosa", 
+                permitiendo a las empresas contratar personal sin remuneración económica directa. Esta medida ha sido 
+                justificada como una forma de impulsar la empleabilidad, pero ha generado preocupación en la población.
+            </p>
+            <figure class="news-inline-imageL">
+                <img src="img/ExperienciaValiosa.webp" alt="Oficina con trabajadores sin sueldo">
+            </figure>
+            <h2 id="content">Impacto en el Mercado Laboral</h2>
+            <p class="news-paragraphL">
+                Desde su implementación, miles de personas han denunciado que sus contratos han sido modificados 
+                bajo esta nueva modalidad, lo que ha significado la eliminación de sus salarios sin previo aviso. 
+                <br><br>
+                El gobierno argumenta que esta política facilitará la incorporación de jóvenes al mercado laboral, 
+                permitiéndoles obtener experiencia sin la presión de generar ingresos inmediatos. Sin embargo, 
+                los trabajadores señalan que esta medida facilita la explotación laboral y desvaloriza la formación profesional.
+            </p>
+            <h2>Reacciones y Futuro</h2>
+            <p class="news-paragraphL">
+                Múltiples organizaciones sindicales han convocado huelgas y protestas exigiendo la eliminación de la reforma. 
+                Paralelamente, se han presentado denuncias ante organismos internacionales por violación de derechos laborales. 
+                <br><br>
+                En respuesta a la crisis generada, el gobierno ha anunciado que revisará la ley y buscará soluciones 
+                para evitar abusos en su implementación. Mientras tanto, miles de personas siguen en incertidumbre 
+                respecto a su futuro laboral.
+            </p>
+        </section>
+    </article>
+    <aside class="related-articleL">
+        <h2>Artículo Relacionado</h2>
+        <a href="#nuevamedida" class="related-link">
+            <img src="img/nuevamedida.webp" alt="Nueva Medida Económica">
+            <div class="related-contentL">
+                <h3>Nueva Medida Económica</h3>
+                <p>Ante el aumento del desempleo y la crisis económica...</p>
+            </div>
+        </a>
+    </aside>
+</div> <!-- Cierre del nuevo contenedor -->
+<script src="/webLenguajeMarcas/js/Luis/noticiacadauna.js" defer></script>
