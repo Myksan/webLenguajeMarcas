@@ -1,15 +1,5 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
 /* Contenedor principal */
-.containerL {
+.contenedor-principal {
     width: 90%;
     max-width: 1200px;
     margin: 50px auto;
@@ -28,7 +18,7 @@ body {
 }
 
 .noticiaL img {
-    width: 125%;
+    width: 100%;  /* Antes era 125%, lo corregimos */
     height: auto;
     aspect-ratio: 16/9;
     object-fit: cover;
@@ -67,35 +57,22 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .containerL {
-        grid-template-columns: 1fr;
-    }
-}
-
+/* Ajustar imágenes en Noticias Recientes */
 .noticias-recientesL img {
-    width: 950px;  /* Mantiene el ancho completo del contenedor */
-    height: 750px;  /* Reduce la altura de la imagen */
-    object-fit: cover;  /* Asegura que la imagen se recorte sin deformarse */
+    width: 100%;  /* Ajuste para evitar desbordamientos */
+    height: auto;  
+    object-fit: cover;  
     border-radius: 8px;
-}
-
-/* Ajustar alineación de Noticias Recientes */
-.noticias-recientesL h2 {
-    margin-top: 25px; /* Eliminar margen superior si lo tiene */
-    padding-top: 10px; /* Añadir separación sin desajustar */
-    text-align: left; /* Asegurar alineación con Noticias Destacadas */
-}
-
-/* Asegurar alineación de ambos títulos */
-.noticias-destacadasL h2 {
-    margin-top: 25px;
-    padding-top: 10px;
-    text-align: left;
 }
 
 /* Ajustar margen del contenedor si es necesario */
 .noticias-recientesL {
     margin-left: 20px; /* Ajusta si está muy pegado al logo */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenedor-principal {
+        grid-template-columns: 1fr;
+    }
 }
