@@ -45,3 +45,11 @@ body {
     margin-left: 10px;
 }
 
+#idiomas{
+    color: #17a2b8;
+}
+
+#idiomas a:not(:first-child) {
+    cursor: not-allowed;
+}
+
