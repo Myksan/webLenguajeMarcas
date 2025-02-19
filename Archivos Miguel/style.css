@@ -1,0 +1,34 @@
+.preformulario_M{
+    margin-bottom: 5%;
+    margin-top: 80px;
+    font-size: 1.5rem;
+}
+
+.preformulario_M h1{
+    font-size: 3.5rem;
+}
+
+.nuestrosIdeales_M{
+    margin-top: 80px;
+}
+.presidentes_M{
+    font-size: 1.2rem;
+    min-height: 50vh;
+    color: white;
+}
+
+.presi1_M{
+    background-color: #6c757d;
+}
+
+.presi2_M{
+    background-color: #343a40;
+}
+
+.presi3_M{
+    background-color: #495057;
+}
+
+.img_presis_M{
+    width: 400px;
+}

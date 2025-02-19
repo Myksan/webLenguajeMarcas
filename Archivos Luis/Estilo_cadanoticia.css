@@ -1,0 +1,239 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.8;
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+
+/* Contenedor Principal */
+.news-containerL {
+    max-width: 1500px;
+    width: 150%;
+    background: white;
+    margin:auto;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+   
+}
+
+/* Imagen Destacada */
+.news-imageL {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-imageL {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Encabezado */
+.news-titleL {
+    font-size: 2.5em;
+    color: #222;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.news-metaL {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.news-categoriesL {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Botones de categorías */
+.categoryL {
+    background: #007BFF;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+
+/* Secciones */
+.news-contentL h2 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #007BFF;
+}
+
+.news-paragraphL {
+    margin-bottom: 15px;
+}
+
+/* Botón Leer Más */
+.read-moreL {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.read-moreL:hover {
+    background: #0056b3;
+}
+
+/* Redes Sociales */
+.social-shareL {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-iconL {
+    width: 45px;
+    height: 45px;
+    background: #007BFF;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.social-iconL:hover {
+    background: #0056b3;
+}
+
+
+/* Botón de Volver */
+.back-buttonL {
+    position: fixed;
+    top: 30%;
+    left: 20px;
+    transform: translateY(-50%);
+    padding: 10px 15px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.back-buttonL:hover {
+    background: #0056b3;
+}
+
+
+.back-buttonL:hover {
+    background: #0056b3;
+}
+/* Sección de Artículo Relacionado */
+.related-articleL {
+    margin-top: 40px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.related-articleL h2 {
+    color: #007BFF;
+}
+
+.related-linkL {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.related-linkL:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.related-linkL img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.related-contentL h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #007BFF;
+}
+
+.related-contentL p {
+    font-size: 14px;
+    color: #555;
+}
+/* Imagen dentro del texto mejorada */
+.news-inline-imageL {
+    float: right; /* Mantiene la alineación a la derecha */
+    width: 35%; /* Reduce un poco el tamaño de la imagen */
+    margin: 10px 0 15px 20px; /* Ajusta el margen para mejorar la distribución */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    overflow: auto;
+    text-align: center;
+}
+
+.news-inline-imageL img {
+    width: 100%; /* Mantiene la imagen dentro del contenedor */
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Leyenda de la imagen */
+.news-inline-imageL figcaption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Mejoras en móviles */
+@media (max-width: 768px) {
+    .news-inline-imageL {
+        float: none; /* Elimina el flotado en móviles */
+        width: 100%; /* Ocupa todo el ancho */
+        text-align: center;
+        margin: 15px auto;
+    }
+}
+
+.news-headerL {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+

@@ -1,0 +1,314 @@
+
+/* -------------------- css Inicio -------------------- */
+body.bodyA {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.fullscreenSectionA {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('/img/espacio.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.fullscreenSectionA::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.fullscreenContentA {
+  position: relative;
+  z-index: 2;
+}
+
+.fullscreenTitleA {
+  font-size: 3.5rem;
+}
+
+.fullscreenSubtitleA {
+  font-size: 1.7rem;
+}
+
+#sobreNosotrosA,
+#nuestrosValoresA,
+#formularioA {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+#sobreNosotrosA {
+  background-color: #6c757d;
+  padding: 40px 0;
+}
+
+#nuestrosValoresA {
+  background-color: #343a40;
+  padding: 40px 0;
+}
+
+#sobreNosotrosA h1, #nuestrosValoresA h1 {
+  font-size: 2.8rem;
+}
+
+#sobreNosotrosA p, #nuestrosValoresA p {
+  font-size: 1.5rem;
+}
+
+#formularioA {
+  background-color: #495057;
+  padding: 20px;
+}
+
+.hoverImage-containerA {
+  position: relative;
+  display: inline-block;
+}
+
+.hoverImageA {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+.hoverImage-containerA:hover .hoverImageA {
+  transform: scale(1.1);
+}
+
+.hoverImageA:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  filter: brightness(0.5);
+}
+
+.hoverImage-textA {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  text-align: center;
+}
+
+.hoverImage-containerA:hover .hoverImage-textA {
+  opacity: 1;
+}
+
+.formContainerA {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  width: 45%;
+  max-width: 450px;
+  color: black;
+}
+
+.formContainerA form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .fullscreenTitleA {
+      font-size: 2.5rem;
+  }
+  .fullscreenSubtitleA {
+      font-size: 1.2rem;
+  }
+  .formContainerA {
+      width: 80%;
+  }
+}
+
+/* -------------------- css Sobre Nosotros -------------------- */
+
+.containerSNA {
+  max-width: 50vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.headerSNA {
+  text-align: center;
+  font-size: 3em;
+  color: #333;
+}
+
+.subheaderSNA {
+  text-align: center;
+  font-size: 2em;
+  color: #444;
+  margin-top: 10px;
+}
+
+.imageSNA {
+  max-width: 45%;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+}
+
+.paragraphSNA {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #666;
+  flex: 1;
+}
+
+.sectionSNA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 50vw;
+  margin: 20px auto;
+}
+
+.leftImageSNA {
+  width: 35%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.rightTextSNA {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #666;
+  flex: 1;
+}
+
+.sectionTitleSNA {
+  text-align: center;
+  font-size: 2em;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.teamGridSNA {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.teamCardSNA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.teamImageSNA {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.teamNameSNA {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.teamPhraseSNA {
+  font-size: 1em;
+  color: #666;
+}
+
+@media (max-width: 1300px) {
+  .contentSNA,
+  .sectionSNA {
+      flex-direction: column;
+      text-align: center;
+  }
+  .containerSNA,
+  .sectionSNA{
+      max-width: 65vw;
+  }
+  .imageSNA {
+      max-width: 100%;
+      margin: 0 auto 20px;
+      float: none;
+  }
+
+  .leftImageSNA {
+      width: 100%; 
+      margin-right: 0; 
+  }
+}
+@media (max-width: 900px){
+  .teamGridSNA{
+      flex-direction: column;
+      text-align: center;
+  }
+  .teamGridSNA {
+      grid-template-columns: repeat(1, 1fr); 
+      max-width: 100%;
+  }
+
+  .teamCardSNA {
+      width: 90%; 
+      margin: 10px auto; 
+  }
+}
+
+/* -------------------- Animaciones css -------------------- */
+
+@keyframes zoom-fade-in {
+  0% {opacity: 0; scale: 0%; transform: translateY(30px);}
+  10% {opacity: 1; scale: 120%; transform: translateY(30px);}
+  20% {opacity: 1; scale: 100%; transform: translateY(30px);}
+  25% {opacity: 1; scale: 100%; transform: translateY(30px);}
+  100% { opacity: 1; scale: 100%; transform: translateY(0px);}
+}
+
+@keyframes fade-in-down{
+  0% {opacity: 0; transform: translateY(-20px);}
+  50% {opacity: 0; transform: translateY(-20px);}
+  100% {opacity: 1; transform: translateY(0px);}
+}
+
+.fullscreenSubtitleA{
+  animation-name: fade-in-down;
+  animation-duration: 4s;
+}
+
+.fullscreenTitleA{
+  animation-name: zoom-fade-in;
+  animation-duration: 6s;
+}
