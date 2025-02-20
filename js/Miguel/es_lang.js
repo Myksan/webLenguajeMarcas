@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.appendChild(imagen);
     
     enlace.addEventListener("click", function (event) {
-        event.preventDefault(); // Evita la navegación del enlace
+        event.preventDefault();
         imagen.style.display = "block";
         audio.play();
         
