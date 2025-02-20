@@ -1,15 +1,11 @@
-<button id="back-button" class="back-button">← Volver</button>
+<a href="#noticias"><button id="back-button" class="back-buttonL">← Volver</button></a>
 
-<div class="news-containerL"> <!-- Sustitución de <main> -->
-<article class="news-itemL">
-    <h1 class="news-titleL"> Trabajo Digno: Ahora con "Oportunidades"</h1>
-
+<div class="news-containerL"> <!-- Contenedor principal -->
+    <article class="news-itemL">
+        <h1 class="news-titleL">Trabajo Digno: Ahora con "Oportunidades"</h1>
         <section class="news-contentL">
-            <div class="news-categoriesL">
-                <button class="category scroll-buttonL" data-target="intro">Introducción</button>
-                <button class="category scroll-buttonL" data-target="content">Desarrollo</button>
-                <button class="category scroll-buttonL" data-target="conclusion">Conclusión</button>
-            </div>
+            
+
             <h2 id="intro">Introducción</h2>
             <p class="news-paragraphL">
                 La reciente reforma laboral ha generado una gran controversia entre trabajadores y empresarios. 
@@ -20,6 +16,7 @@
             <figure class="news-inline-imageL">
                 <img src="img/ExperienciaValiosa.webp" alt="Oficina con trabajadores sin sueldo">
             </figure>
+
             <h2 id="content">Impacto en el Mercado Laboral</h2>
             <p class="news-paragraphL">
                 Desde su implementación, miles de personas han denunciado que sus contratos han sido modificados 
@@ -29,7 +26,8 @@
                 permitiéndoles obtener experiencia sin la presión de generar ingresos inmediatos. Sin embargo, 
                 los trabajadores señalan que esta medida facilita la explotación laboral y desvaloriza la formación profesional.
             </p>
-            <h2>Reacciones y Futuro</h2>
+
+            <h2 id="conclusion">Reacciones y Futuro</h2>
             <p class="news-paragraphL">
                 Múltiples organizaciones sindicales han convocado huelgas y protestas exigiendo la eliminación de la reforma. 
                 Paralelamente, se han presentado denuncias ante organismos internacionales por violación de derechos laborales. 
@@ -40,9 +38,10 @@
             </p>
         </section>
     </article>
+
     <aside class="related-articleL">
         <h2>Artículo Relacionado</h2>
-        <a href="#nuevamedida" class="related-link">
+        <a href="#nuevamedida" class="related-linkL">
             <img src="img/nuevamedida.webp" alt="Nueva Medida Económica">
             <div class="related-contentL">
                 <h3>Nueva Medida Económica</h3>
@@ -50,5 +49,4 @@
             </div>
         </a>
     </aside>
-</div> <!-- Cierre del nuevo contenedor -->
-<script src="/webLenguajeMarcas/js/Luis/noticiacadauna.js" defer></script>
+</div>

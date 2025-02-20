@@ -1,14 +1,11 @@
-<button id="back-button" class="back-buttonL">← Volver</button>
+<a href="#noticias"><button id="back-button" class="back-buttonL">← Volver</button></a>
 
-<div class="news-containerL"> <!-- Sustitución de <main> -->
+<div class="news-containerL"> <!-- Contenedor principal -->
     <article class="news-itemL">
         <h1 class="news-titleL">Nueva Medida Económica</h1>
         <section class="news-contentL">
-            <div class="news-categoriesL">
-                <button class="category scroll-buttonL" data-target="intro">Introducción</button>
-                <button class="category scroll-buttonL" data-target="content">Desarrollo</button>
-                <button class="category scroll-buttonL" data-target="conclusion">Conclusión</button>
-            </div>
+            
+
             <h2 id="intro">Introducción</h2>
             <p class="news-paragraphL">
                 Ante el aumento del desempleo y la crisis económica, el gobierno ha anunciado una nueva estrategia 
@@ -19,6 +16,7 @@
             <figure class="news-inline-imageL">
                 <img src="img/nuevamedida.webp" alt="Cola de personas en bancos debido a la crisis económica">
             </figure>
+
             <h2 id="content">Detalles de la Nueva Medida</h2>
             <p class="news-paragraphL">
                 La estrategia incluye un paquete de estímulos económicos destinados a las empresas más afectadas, 
@@ -27,7 +25,8 @@
                 Uno de los aspectos más controvertidos ha sido la decisión de restringir el retiro de efectivo en 
                 los bancos para evitar la fuga de capitales, lo que ha generado largas colas en los principales bancos del país.
             </p>
-            <h2>Reacciones y Futuro</h2>
+
+            <h2 id="conclusion">Reacciones y Futuro</h2>
             <p class="news-paragraphL">
                 Los ciudadanos han reaccionado con incertidumbre, mientras que los economistas advierten que la 
                 recuperación económica podría verse afectada por estas restricciones. Por otro lado, el sector 
@@ -38,9 +37,10 @@
             </p>
         </section>
     </article>
+
     <aside class="related-articleL">
         <h2>Artículo Relacionado</h2>
-        <a href="#crisisresuelta" class="related-link">
+        <a href="#crisisresuelta" class="related-linkL">
             <img src="img/crisisresuelta.webp" alt="Crisis Económica Resuelta">
             <div class="related-contentL">
                 <h3>Crisis Económica Resuelta</h3>
@@ -48,6 +48,4 @@
             </div>
         </a>
     </aside>
-</div> <!-- Cierre del nuevo contenedor -->
-<script src="/webLenguajeMarcas/js/Luis/noticiacadauna.js" defer></script>
-
+</div>

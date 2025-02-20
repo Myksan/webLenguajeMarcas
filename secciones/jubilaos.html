@@ -1,14 +1,11 @@
-<button id="back-button" class="back-buttonL">← Volver</button>
+<a href="#noticias"><button id="back-button" class="back-buttonL">← Volver</button></a>
 
-<div class="news-containerL"> <!-- Sustitución de <main> -->
-  <article class="news-itemL">
-    <h1 class="news-titleL">Nueva Iniciativa del Gobierno</h1>
+<div class="news-containerL"> <!-- Contenedor principal -->
+    <article class="news-itemL">
+        <h1 class="news-titleL">Nueva Iniciativa del Gobierno</h1>
         <section class="news-contentL">
-            <div class="news-categoriesL">
-                <button class="category scroll-buttonL" data-target="intro">Introducción</button>
-                <button class="category scroll-buttonL" data-target="content">Desarrollo</button>
-                <button class="category scroll-buttonL" data-target="conclusion">Conclusión</button>
-            </div>
+            
+
             <h2 id="intro">Introducción</h2>
             <p class="news-paragraphL">
                 Con el objetivo de reducir la carga en el sistema de pensiones, el gobierno ha presentado 
@@ -19,6 +16,7 @@
             <figure class="news-inline-imageL">
                 <img src="img/jubiladospreocupados.webp" alt="Personas mayores conversando en un parque">
             </figure>
+
             <h2 id="content">Detalles de la Reforma</h2>
             <p class="news-paragraphL">
                 La propuesta sugiere un aumento progresivo en la edad de jubilación, junto con incentivos 
@@ -28,7 +26,8 @@
                 trabajadores de más de 65 años y bonificaciones en la pensión para quienes extiendan su 
                 carrera laboral por al menos cinco años adicionales.
             </p>
-            <h2>Reacciones y Futuro</h2>
+
+            <h2 id="conclusion">Reacciones y Futuro</h2>
             <p class="news-paragraphL">
                 Mientras el gobierno defiende la reforma como una solución necesaria para la sostenibilidad 
                 del sistema de pensiones, los sindicatos han denunciado que esto solo pospone el problema y 
@@ -40,6 +39,7 @@
             </p>
         </section>
     </article>
+
     <aside class="related-articleL">
         <h2>Artículo Relacionado</h2>
         <a href="#Opurtunidades" class="related-linkL">
@@ -50,6 +50,4 @@
             </div>
         </a>
     </aside>
-</div> <!-- Cierre del nuevo contenedor -->
-<script src="/webLenguajeMarcas/js/Luis/noticiacadauna.js" defer></script>
-
+</div>
