@@ -4,6 +4,7 @@ function updateLoadingText() {
     loadingText.textContent = "Cargando" + ".".repeat(dots);
     dots = (dots + 1) % 4;
 }
+
 const loadingInterval = setInterval(updateLoadingText, 400);
 
 window.addEventListener("load", function () {
