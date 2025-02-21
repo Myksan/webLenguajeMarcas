@@ -165,6 +165,9 @@ body.bodyA {
   .formContainerA {
       width: 80%;
   }
+  .hoverImageA{
+    max-width: 250px;
+  }
 }
 .text{
   position: absolute;
