@@ -11,7 +11,6 @@ window.addEventListener("load", function () {
     setTimeout(() => {
         clearInterval(loadingInterval);
         document.getElementById("loadingScreen").classList.add("hidden");
-        document.getElementById("content").style.visibility = "visible";
     }, 8000);
 });
 

@@ -6,10 +6,6 @@ body.bodyA {
   overflow-x: hidden;
 }
 
-.content{
-  visibility: hidden;
-}
-
 .loading-screen {
   position: fixed;
   top: 0;
