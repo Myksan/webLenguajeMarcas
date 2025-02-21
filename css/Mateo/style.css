@@ -6,6 +6,32 @@ body.bodyA {
   overflow-x: hidden;
 }
 
+.content{
+  visibility: hidden;
+}
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: opacity 0.5s ease;
+  z-index: 1031;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  display: none;
+}
+
 .fullscreenSectionA {
   position: relative;
   height: 100vh;
@@ -143,7 +169,114 @@ body.bodyA {
       width: 80%;
   }
 }
+.text{
+  position: absolute;
+  opacity: 0;
+}
 
+#text1{
+  animation: fade-in-left1;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  padding-bottom: 9rem;
+  animation-delay: 4s;
+}
+#text2{
+  animation: fade-in-right1;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  padding-top: 14rem;
+  animation-delay: 3.2s;
+}
+#text3{
+  animation: fade-in-right2;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  padding-top: 24rem;
+  animation-delay: 0.8s;
+}
+#text4{
+  animation: fade-in-left2;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  padding-bottom: 20rem;
+  animation-delay: 1s;
+}
+#text5{
+  animation: fade-in-right3;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  padding-bottom: 14rem;
+  animation-delay: 3s;
+}
+#text6{
+  animation: fade-in-left3;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  padding-top: 4rem;
+}
+#text7{
+  animation: fade-in-right4;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  padding-top: 30rem;
+  animation-delay: 2.6s;
+}
+#text8{
+  animation: fade-in-left4;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  padding-top: 8rem;
+  animation-delay: 1.3s;
+}
+#text9{
+  animation: fade-in-left5;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  padding-top: 28rem;
+  animation-delay: 2.3s;
+}
+#text10{
+  animation: fade-in-right5;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  padding-top: 19rem;
+  animation-delay: 3.5s;
+}
+#text11{
+  animation: fade-in-left6;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  padding-bottom: 13rem;
+  animation-delay: 4.4s;
+}
+#text12{
+  animation: fade-in-right6;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  padding-bottom: 24rem;
+  animation-delay: 5s;
+}
+#text13{
+  animation: fade-in-left7;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  padding-top: 26rem;
+  animation-delay: 3.9s;
+}
+#text14{
+  animation: fade-in-right7;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  padding-top: 9rem;
+  animation-delay: 3.1s;
+}
+#text15{
+  animation: fade-in-left8;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-delay: 1.1s;
+}
 /* -------------------- css Sobre Nosotros -------------------- */
 
 .containerSNA {
@@ -306,9 +439,103 @@ body.bodyA {
 .fullscreenSubtitleA{
   animation-name: fade-in-down;
   animation-duration: 4s;
+  animation-delay: 8.05s;
 }
 
 .fullscreenTitleA{
   animation-name: zoom-fade-in;
   animation-duration: 6s;
+  animation-delay: 8.05s;
+}
+
+@keyframes fade-in-left1{
+  0%{opacity: 0; transform: translateX(-200px);}
+  20%{opacity: 0;}
+  50%{opacity: 1;}
+  80%{opacity: 0;}
+  100%{opacity: 0; transform: translateX(200px);}
+}
+@keyframes fade-in-left2{
+  0%{opacity: 0; transform: translateX(-700px);}
+  20%{opacity: 0;}
+  50%{opacity: 1;}
+  80%{opacity: 0;}
+}
+@keyframes fade-in-left3{
+  0%{opacity: 0; transform: translateX(100px);}
+  20%{opacity: 0;}
+  50%{opacity: 1;}
+  80%{opacity: 0; transform: translateX(400px);}
+}
+@keyframes fade-in-left4{
+  0%{opacity: 0; transform: translateX(-100);}
+  20%{opacity: 0;}
+  50%{opacity: 1;}
+  80%{opacity: 0; transform: translateX(100px);}
+}
+@keyframes fade-in-left5{
+  0%{opacity: 0; transform: translateX(-100px);}
+  20%{opacity: 0;}
+  50%{opacity: 1;}
+  80%{opacity: 0; transform: translateX(0px);}
+}
+@keyframes fade-in-left6{
+  0%{opacity: 0; transform: translateX(-600px);}
+  20%{opacity: 0;}
+  50%{opacity: 1;}
+  80%{opacity: 0; transform: translateX(-450px);}
+}
+@keyframes fade-in-left7{
+  0%{opacity: 0; transform: translateX(-200px);}
+  20%{opacity: 0;}
+  50%{opacity: 1;}
+  80%{opacity: 0; transform: translateX(-350px);}
+}
+@keyframes fade-in-left8{
+  0%{opacity: 0; transform: translateX(-200px);}
+  20%{opacity: 0;}
+  50%{opacity: 1;}
+  80%{opacity: 0; transform: translateX(-350px);}
+}
+@keyframes fade-in-right1{
+  0%{opacity: 0; transform: translateX(-200px);}
+  20%{opacity: 0;}
+  50%{opacity: 1;}
+  80%{opacity: 0; transform: translateX(-100px);}
+}
+@keyframes fade-in-right2{
+  0%{opacity: 0; transform: translateX(100px);}
+  20%{opacity: 0;}
+  50%{opacity: 1;}
+  80%{opacity: 0; transform: translateX(0px);}
+}
+@keyframes fade-in-right3{
+  0%{opacity: 0; transform: translateX(400px);}
+  20%{opacity: 0;}
+  50%{opacity: 1;}
+  80%{opacity: 0; transform: translateX(200px);}
+}
+@keyframes fade-in-right4{
+  0%{opacity: 0; transform: translateX(400px);}
+  20%{opacity: 0;}
+  50%{opacity: 1;}
+  80%{opacity: 0; transform: translateX(200px);}
+}
+@keyframes fade-in-right5{
+  0%{opacity: 0; transform: translateX(500px);}
+  20%{opacity: 0;}
+  50%{opacity: 1;}
+  80%{opacity: 0; transform: translateX(550px);}
+}
+@keyframes fade-in-right6{
+  0%{opacity: 0; transform: translateX(-500px);}
+  20%{opacity: 0;}
+  50%{opacity: 1;}
+  80%{opacity: 0; transform: translateX(-550px);}
+}
+@keyframes fade-in-right7{
+  0%{opacity: 0; transform: translateX(-500px);}
+  20%{opacity: 0;}
+  50%{opacity: 1;}
+  80%{opacity: 0; transform: translateX(-550px);}
 }
