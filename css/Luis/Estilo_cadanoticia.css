@@ -33,11 +33,10 @@ body {
     margin-top: 50px; /* Aumenta la separación desde arriba */
 }
 
-
-/* Botón de Volver */
+/* BOTÓN DE VOLVER */
 .back-buttonL {
     position: fixed;
-    top: 250px;
+    top: 250px; /* Ajustado para que no quede fuera de pantalla */
     left: 20px;
     padding: 10px 15px;
     background: #007BFF;
@@ -46,18 +45,19 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
-    z-index: 1000;
+    z-index: 9999; /* Asegurar que esté por encima de otros elementos */
+    display: block !important; /* Forzar visibilidad */
 }
 
 .back-buttonL:hover {
     background: #0056b3;
 }
 
-/* Categorías */
+/* CATEGORÍAS (Botones de navegación) */
 .news-categoriesL {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px; /* Aumento el espacio entre los botones */
     margin-bottom: 20px;
 }
 
@@ -76,19 +76,19 @@ body {
     background: #0056b3;
 }
 
-/* Secciones */
+/* SECCIONES */
 .news-contentL h2 {
     margin-top: 20px;
     font-size: 22px;
     color: #007BFF;
 }
 
-/* Párrafos */
+/* PÁRRAFOS */
 .news-paragraphL {
     margin-bottom: 15px;
 }
 
-/* Imagen dentro del texto */
+/* IMAGEN DENTRO DEL TEXTO */
 .news-inline-imageL {
     float: right;
     width: 40%;
@@ -103,7 +103,7 @@ body {
     border-radius: 10px;
 }
 
-/* Sección de Artículo Relacionado */
+/* SECCIÓN DE ARTÍCULO RELACIONADO */
 .related-articleL {
     margin-top: 40px;
     padding: 20px;
@@ -140,7 +140,7 @@ body {
     margin-right: 15px;
 }
 
-/* Mejora en dispositivos móviles */
+/* SOLUCIÓN PARA MOVIL: ASEGURAR VISIBILIDAD */
 @media (max-width: 768px) {
     .news-inline-imageL {
         float: none;
@@ -160,4 +160,87 @@ body {
         padding: 6px 12px;
         font-size: 12px;
     }
+
+    .back-buttonL {
+        top: 5%; /* Ajuste para móviles */
+        left: 10px;
+    }
+}
+
+/* Estilos para la sección de likes */
+.like-sectionL {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.like-buttonL {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.like-buttonL:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.like-buttonL:hover {
+    background: #218838;
+}
+
+/* Estilos para la sección de comentarios */
+.comments-sectionL {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comments-sectionL h3 {
+    color: #007BFF;
+}
+
+.comments-sectionL input {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.comments-sectionL button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comments-sectionL button:hover {
+    background: #0056b3;
+}
+
+#comments-listL {
+    margin-top: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+#comments-listL li {
+    background: white;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }

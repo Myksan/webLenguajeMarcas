@@ -1,10 +1,14 @@
-<a href="#noticias"><button id="back-button" class="back-buttonL">← Volver</button></a>
+<button id="back-buttonL" class="back-buttonL">← Volver</button>
 
 <div class="news-containerL"> <!-- Contenedor principal -->
     <article class="news-itemL">
         <h1 class="news-titleL">Nueva Medida Económica</h1>
         <section class="news-contentL">
-            
+            <div class="news-categoriesL">
+                <button class="categoryL scroll-buttonL" data-target="intro">Introducción</button>
+                <button class="categoryL scroll-buttonL" data-target="content">Desarrollo</button>
+                <button class="categoryL scroll-buttonL" data-target="conclusion">Conclusión</button>
+            </div>    
 
             <h2 id="intro">Introducción</h2>
             <p class="news-paragraphL">
@@ -37,7 +41,19 @@
             </p>
         </section>
     </article>
+    <!-- Sección de Likes -->
+    <div class="like-sectionL">
+        <button id="like-buttonL" class="like-buttonL">👍 Like</button>
+        <span id="like-countL">0</span>
+    </div>
 
+    <!-- Sección de Comentarios -->
+    <div class="comments-sectionL">
+        <h3>Comentarios</h3>
+        <input type="text" id="comment-inputL" placeholder="Escribe un comentario...">
+        <button id="comment-buttonL">Enviar</button>
+        <ul id="comments-listL"></ul>
+    </div>
     <aside class="related-articleL">
         <h2>Artículo Relacionado</h2>
         <a href="#crisisresuelta" class="related-linkL">

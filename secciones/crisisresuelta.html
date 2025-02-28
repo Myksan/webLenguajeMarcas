@@ -1,38 +1,53 @@
-<a href="#noticias"><button id="back-button" class="back-buttonL">← Volver</button></a>
+<button id="back-buttonL" class="back-buttonL">← Volver</button>
 
-<div class="news-containerL"> <!-- Contenedor principal -->
+<div class="news-containerL">
     <article class="news-itemL">
         <h1 class="news-titleL">Crisis Económica Resuelta: Un Giro Inesperado</h1>
+
+        <div class="news-categoriesL">
+            <button class="categoryL scroll-buttonL" data-target="intro">Introducción</button>
+            <button class="categoryL scroll-buttonL" data-target="content">Desarrollo</button>
+            <button class="categoryL scroll-buttonL" data-target="conclusion">Conclusión</button>
+        </div>
+
         <section class="news-contentL">
-            
             <h2 id="intro">Introducción</h2>
             <p class="news-paragraphL">
-                En un giro inesperado para la economía global, los últimos informes revelan una notable reducción en los índices de pobreza y desempleo. Según los economistas, esta transformación es resultado de un conjunto de medidas estratégicas impulsadas por el sector financiero y el gobierno. La estabilidad que parecía inalcanzable hace apenas unos años, ahora se materializa con una mejoría significativa en la calidad de vida de los ciudadanos.
+                En un giro inesperado, la crisis económica que ha afectado a gran parte del mundo parece llegar a su fin. Los mercados financieros han experimentado una mejora inesperada, sorprendiendo a economistas y expertos que no previeron este repunte. A lo largo de los últimos meses, se temía que la situación se prolongara aún más, pero recientes acuerdos internacionales y políticas económicas implementadas por diversas naciones han dado una señal de esperanza. Sin embargo, algunos críticos señalan que estos avances no son suficientes para superar las desigualdades que han aumentado durante la crisis. 
+                La recuperación ha sido desigual, y mientras algunos países avanzan con rapidez, otros aún luchan por salir de la recesión.
             </p>
+
             <figure class="news-inline-imageL">
                 <img src="img/crisisresuelta.webp" alt="Ilustración del crecimiento económico">
             </figure>
 
             <h2 id="content">Desarrollo</h2>
             <p class="news-paragraphL">
-                Los datos más recientes indican un crecimiento del PIB del 5,6% en los últimos seis meses, acompañado por una caída del desempleo a niveles históricos. Factores como la inversión extranjera directa, la digitalización de los procesos administrativos y las reformas fiscales han sido claves en este cambio.
-                <br><br>
-                Uno de los hitos más importantes ha sido la renegociación de la deuda externa, permitiendo que los países emergentes tengan acceso a mayores recursos sin comprometer su estabilidad económica. Además, el sector bancario ha flexibilizado sus normativas, permitiendo que más personas accedan a créditos y financiamiento, lo que ha impulsado el emprendimiento y la generación de empleo.
-            </p>
-
-            <h2 id="conclusion">Impacto en la sociedad</h2>
-            <p class="news-paragraphL">
-                El ciudadano promedio ya comienza a notar los efectos de este crecimiento. Los precios de los productos básicos han disminuido, el acceso a la vivienda ha mejorado y las oportunidades de empleo se han diversificado. Programas gubernamentales de apoyo a pequeñas empresas han permitido que nuevos emprendedores surjan con ideas innovadoras y sostenibles.
-                <br><br>
-                Sin embargo, algunos expertos advierten que aún existen desafíos por superar. La inflación sigue siendo una preocupación en algunos sectores, y la necesidad de una regulación equilibrada en el mercado financiero es clave para evitar burbujas económicas en el futuro.
+                Los datos más recientes indican que los índices de crecimiento global han comenzado a repuntar. Según un informe de la Organización Mundial de Comercio, las exportaciones han aumentado significativamente, lo que ha impulsado la economía global. Países como Alemania, Japón y Estados Unidos han sido los primeros en ver señales de una fuerte recuperación. Por otro lado, el aumento de la inversión en sectores clave como la tecnología y las energías renovables ha sido un factor importante para esta recuperación. Sin embargo, la crisis también ha dejado cicatrices profundas. La inflación sigue siendo una preocupación en muchas partes del mundo, y el desempleo aún se encuentra por encima de los niveles previos a la pandemia en varios países. 
+                Las medidas de estímulo económico implementadas por muchos gobiernos parecen estar ayudando, pero algunos expertos sugieren que es necesario un enfoque más integral para garantizar una recuperación sostenible. Algunos analistas advierten que la actual recuperación podría ser más frágil de lo que parece, ya que la economía aún depende de factores externos, como la pandemia y las políticas de los bancos centrales.
             </p>
 
             <h2 id="conclusion">Conclusión</h2>
             <p class="news-paragraphL">
-                El panorama económico actual muestra señales de esperanza y crecimiento. Aunque la crisis económica parecía insuperable hace algunos años, las estrategias implementadas han dado sus frutos. Ahora, el reto es mantener este impulso y evitar repetir errores del pasado. La comunidad internacional celebra esta recuperación, pero se mantiene atenta a los próximos movimientos en el ámbito financiero y político.
+                A medida que la economía global comienza a recuperarse, es crucial que se implementen reformas económicas para garantizar que todos los ciudadanos se beneficien de este repunte. La crisis ha puesto de manifiesto la necesidad de una economía más inclusiva y resiliente que pueda resistir las futuras turbulencias económicas. Las políticas que promuevan la justicia social, el empleo y la sostenibilidad serán claves para lograr una recuperación duradera. Mientras tanto, el mundo observa cómo las naciones gestionan este delicado proceso y qué medidas se tomarán para evitar una recaída en la crisis. 
+                Aunque la recuperación económica es una noticia positiva, aún queda mucho por hacer para garantizar que las lecciones de esta crisis no se olviden, y para preparar a las economías globales para las incertidumbres del futuro. Las políticas internacionales, la cooperación global y un enfoque más ético hacia la distribución de la riqueza serán fundamentales para prevenir una futura crisis económica de magnitudes similares.
             </p>
         </section>
     </article>
+
+    <!-- Sección de Likes -->
+    <div class="like-sectionL">
+        <button id="like-buttonL" class="like-buttonL">👍 Like</button>
+        <span id="like-countL">0</span>
+    </div>
+
+    <!-- Sección de Comentarios -->
+    <div class="comments-sectionL">
+        <h3>Comentarios</h3>
+        <input type="text" id="comment-inputL" placeholder="Escribe un comentario...">
+        <button id="comment-buttonL">Enviar</button>
+        <ul id="comments-listL"></ul>
+    </div>
 
     <aside class="related-articleL">
         <h2>Artículo Relacionado</h2>
